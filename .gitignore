@@ -1,0 +1,130 @@
+# .gitignore for AI Fitness Partner Public Repository
+
+# This public repository should ONLY contain:
+# - README.md (showcase)
+# - LICENSE.md (proprietary)
+# - assets/ (images, gifs, diagrams)
+# - SETUP_GUIDE.md (instructions)
+
+# ===================================
+# CRITICAL: DO NOT COMMIT SOURCE CODE
+# ===================================
+
+# Source Code (ALL source should be in private repo)
+*.js
+*.html
+*.css
+*.jsx
+*.tsx
+*.ts
+*.vue
+*.py
+
+# Configuration Files (contain secrets)
+.env
+.env.local
+.env.production
+*.config.js
+config.js
+firebase-config.js
+*.json
+!package.json.example
+
+# Dependencies
+node_modules/
+vendor/
+venv/
+__pycache__/
+*.pyc
+
+# Build Output
+dist/
+build/
+out/
+.next/
+.cache/
+coverage/
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Deployment Scripts
+deploy.ps1
+deploy.sh
+*.ps1
+*.sh
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs and Databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Private Documentation (keep in private repo)
+PRIVATE_*.md
+INTERNAL_*.md
+architecture-detailed.md
+security-audit.md
+
+# Test Files
+*.test.js
+*.spec.js
+test/
+tests/
+__tests__/
+
+# ===================================
+# ALLOWED FILES FOR PUBLIC REPO
+# ===================================
+
+# Explicitly allow these files
+!README.md
+!LICENSE.md
+!SETUP_GUIDE.md
+!assets/README.md
+
+# Allow images and visual assets
+!assets/**/*.png
+!assets/**/*.jpg
+!assets/**/*.jpeg
+!assets/**/*.gif
+!assets/**/*.svg
+!assets/**/*.webp
+
+# Allow markdown documentation (showcase only)
+!docs/SHOWCASE.md
+!docs/ARCHITECTURE_OVERVIEW.md
+
+# ===================================
+# NOTES
+# ===================================
+
+# This .gitignore is VERY restrictive by design.
+# The public repo should be a "billboard" - marketing only.
+# All actual source code belongs in the private repository.
