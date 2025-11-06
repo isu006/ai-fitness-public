@@ -92,6 +92,12 @@ INTERNAL_*.md
 architecture-detailed.md
 security-audit.md
 
+# Setup/Project Documentation (private guides, not for public)
+PUBLIC_VS_PRIVATE.md
+QUICK_START.md
+README_SUMMARY.md
+SETUP_GUIDE.md
+
 # Test Files
 *.test.js
 *.spec.js
